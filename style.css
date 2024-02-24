@@ -1,0 +1,197 @@
+
+
+/* Style de la bannière */
+header {
+    background-size: cover;
+    background-position: center;
+    height: 40vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+header h2 {
+    color: white; /* La couleur du texte */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.5em; /* Taille du texte */
+    margin-top: 0.4em; /* Espace au-dessus du sous-titre */
+    /* Ajoutez d'autres styles de police au besoin */
+    opacity: 1; /* Rendre le texte un peu transparent */
+    font-weight: normal; /* Optionnel: définir le poids de la police */
+    /* Ajoutez d'autres propriétés comme l'espacement des lettres, la famille de polices, etc. */
+}
+/* Style pour le paragraphe d'introduction */
+.intro-paragraph {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 15px auto; /* Ajoute une marge en haut et en bas, et centre le bloc lui-même */
+    max-width: 80%; /* Optionnel: Limite la largeur du paragraphe pour une meilleure lisibilité */
+    padding: 0 20px; /* Optionnel: Ajoute un peu d'espace sur les côtés */
+    font-size: 1.1em; /* Ajustez selon le design de votre site */
+    line-height: 1.6; /* Améliore la lisibilité */
+    /* Vous pouvez ajouter d'autres propriétés CSS ici selon vos besoins */
+}
+/* Style pour les sections de ville */
+.city-section {
+    margin-bottom: 2em; /* Espacement entre les sections */
+}
+/* Style pour le conteneur des sections de ville */
+.cities-container {
+    background-color: #fdfdfd; /* Bleu ciel */
+    padding: 1em; /* Ajoutez un peu d'espacement autour des sections de ville */
+    /* Autres styles si nécessaire */
+}
+
+/* Style pour le conteneur d'image */
+.image-container {
+    position: relative;
+    max-width: 600px; /* Largeur maximale de l'image */
+    margin: 0 auto; /* Centrer le conteneur d'image */
+}
+#contact {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #d2e3f7; /* Un fond léger pour le formulaire */
+}
+
+#contact h2 {
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 50%;
+    padding: .5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}
+.image-fixed-size {
+    width: 100%; /* L'image prendra toute la largeur du conteneur */
+    height: auto; /* La hauteur s'ajuste automatiquement */
+    display: block; /* Évite l'espace en dessous de l'image */
+}
+/* Style pour encadrer les images dans les sections de ville */
+.city-section .image-container img {
+    border: 3px solid #0056b3; /* Bleu foncé pour l'exemple, ajustez selon votre palette de couleurs */
+    border-radius: 5px; /* Coins arrondis pour un look moderne, ajustez selon vos préférences */
+    margin-top: 20px; /* Ajoute un peu d'espace au-dessus de l'image, ajustez selon le besoin */
+}
+/* Style pour le paragraphe de clôture */
+.closing-paragraph {
+    font-size: 1.2em; /* Ajustez selon vos préférences */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    max-width: 80%; /* Limite la largeur pour une meilleure lisibilité */
+    margin: 40px auto; /* Centre le paragraphe et ajoute de l'espace au-dessus et en dessous */
+    padding: 20px; /* Ajoute un peu d'espace à l'intérieur */
+    background-color: #f0f0f0; /* Un fond léger pour faire ressortir le paragraphe */
+    border-radius: 10px; /* Coins arrondis pour un look doux */
+}
+/* Style pour le texte superposé */
+
+.overlay-link {
+    position: absolute;
+    top: 5%; /* Aligné en haut */
+    left: 50%; /* Centré horizontalement */
+    transform: translateX(-50%); /* Centrage horizontal précis */
+    width: 15%; /* La boîte s'étend sur toute la largeur de l'image */
+    background: rgba(2, 77, 135, 0.6); /* Fond semi-transparent bleu */
+    color: white;
+    padding: 0.3em 0; /* Espace vertical à l'intérieur de la boîte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    font-size: 1,4em; /* Taille de la police */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+    text-align: center; /* Centrer le texte dans la boîte */
+    
+}
+
+.overlay-link:hover,
+.overlay-link:focus {
+    background-color: rgba(27, 134, 200, 0.8); /* Assombrir le fond au survol */
+}
+/* Style global pour les images (sauf la bannière) */
+img {
+    width: 100%; /* Cela rendra l'image pleine largeur de son conteneur */
+    height: auto; /* Cela préservera le ratio de l'image */
+    max-width: 600px; /* Vous pouvez définir une largeur maximale */
+    margin: 0 auto; /* Centrer l'image si elle n'est pas pleine largeur */
+    display: block; /* Éviter l'espacement sous l'image */
+ 
+
+
+header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* Ajouter un overlay pour mieux lire le texte si nécessaire */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Assombrir légèrement l'image de fond pour améliorer la lisibilité du texte */
+    z-index: 0;
+}
+
+/* Assurez-vous que le contenu est au-dessus de l'overlay */
+header > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Styles des sections */
+section {
+    padding: 4em 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+section p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #f8f8f8;
+    padding: 2em 0;
+    text-align: center;
+    font-size: 0.8em;
+}
